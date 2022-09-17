@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register App</title>
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Cash Register </title>
 </head>
+
 <body>
     <h1> Cash Register App</h1>
-    <div> Enter the bill amount below</div>
+     <p> Enter the bill amount below</p>
     <textarea id="bill"></textarea>
-    <DIV>Enter the cash amount to pay the bill below</DIV>
+
+    <p>Enter the cash amount to pay the bill below</p>
     <textarea id="cash"></textarea>
-    <button id="btn-check">Check</button>
-    <div>Amount to be returned </div>
+   
+    <div>
+    <button class="button" id="btn-check"> Check </button>
+    </div>
+
+    
+    <p style ="margin-top: 0;">Amount to be returned </p>
     <textarea id="amount"></textarea>
-    <div>Number of notes to be given.</div>
-    <textarea id="notes"></textarea>
+
+    <p>Number of notes to be given</p>
+    <textarea style="font-size:large;height: 6rem;"id="notes"></textarea>
 
 
     <script src="app.js" text="text/javascript"></script>
 
 </body>
+
 </html>

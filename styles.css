@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    margin:auto;
+    max-width: 6000px;
+    padding: 2rem;
+    background-color: rgb(32, 150, 111);
+}
+
+.root{
+
+}
+
+.button{
+    margin:2rem;
+    padding:0.5rem 4rem;
+    border-radius: 10px;
+    cursor:pointer;
+    background-color: brown;
+    font-weight: 500;
+}
+
+textarea{
+    width:30%;
+    height:3rem;
+    margin:auto;
+    font-size: xx-large;
+    background-color: rgb(219, 219, 42);
+    border:3px solid black;
+    border-radius: 5px;
+}
+
+p{
+    font-size: larger;
+    margin:1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+h1{
+    padding: 1rem;
+    margin-top: 0px;
+    font-weight: 900;
+}
+
