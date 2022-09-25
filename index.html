@@ -7,31 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
 
-    <title>Cash Register </title>
+    <title> Cash Register </title>
 </head>
 
 <body>
-    <h1> Cash Register App</h1>
-     <p> Enter the bill amount below</p>
-    <textarea id="bill"></textarea>
+    <div id="screen1">
+        <h1> Cash Register Manager</h1>
+        <P>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
 
-    <p>Enter the cash amount to pay the bill below</p>
-    <textarea id="cash"></textarea>
-   
-    <div>
-    <button class="button" id="btn-check"> Check </button>
-    </div>
+        <label type="bill"> Enter bill amount</label>
+        <div>
+            <input type="number" name="bill-amount" id="bill">
+        </div>
+
+        <div><button class="button" id="btn-next">Next</button></div>
 
     
-    <p style ="margin-top: 0;">Amount to be returned </p>
-    <textarea id="amount"></textarea>
+    </div>
 
-    <p>Number of notes to be given</p>
-    <textarea style="font-size:large;height: 6rem;"id="notes"></textarea>
+    <div id="screen2">
+        <label type="cash">Enter cash amount </label>
+        <div>
+            <input type="number" name="" id="cash" />
+        </div>
 
+        <div>
+            <button class="button" id="btn-check"> Check </button>
+        </div>
 
+    </div>
+    <p id="error"></p>
+    <div id="screen3">
+
+        <table class="table">
+            <caption>
+                Return Change
+            </caption>
+
+            <tr>
+                <th>No. of Notes</th>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+
+            </tr>
+
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+
+            </tr>
+
+        </table>
+
+    </div>
     <script src="app.js" text="text/javascript"></script>
-
 </body>
 
 </html>

@@ -1,44 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+
 body{
     text-align: center;
-    margin:auto;
-    max-width: 6000px;
-    padding: 2rem;
-    background-color: rgb(32, 150, 111);
+    margin:0 auto;
+    background-color: rgb(76, 76, 191);
+    color: wheat;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.root{
-
-}
 
 .button{
-    margin:2rem;
-    padding:0.5rem 4rem;
+    margin:0.5rem;
+    padding: 0.5rem 1.5rem ;
     border-radius: 10px;
     cursor:pointer;
-    background-color: brown;
-    font-weight: 500;
+    background-color: wheat;
+    font-size: large;
+    
 }
 
-textarea{
-    width:30%;
-    height:3rem;
+input{
+    width:20%;
+    height:2rem;
     margin:auto;
+    margin: 1rem;
     font-size: xx-large;
-    background-color: rgb(219, 219, 42);
-    border:3px solid black;
+    font-weight: 550;
+    background-color:black;
+    border:2px groove wheat;
     border-radius: 5px;
+    color:rgb(76, 76, 191);
 }
 
 p{
-    font-size: larger;
-    margin:1rem;
-    margin-bottom: 0;
+    font-size:x-large;
+    margin:1.5rem;
     font-weight: 400;
 }
 
+label{
+    font-size:x-large;
+    font-weight: 400;
+}
+
+
 h1{
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin-top: 0px;
     font-weight: 900;
+    font-size: 2.5rem;
+    
 }
+.table {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin:1rem auto;
+  }
+  
+  .table caption {
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  th,
+  td {
+    border: 2px solid black;
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.5rem;
+  }
+#screen2{
+    display: none;
+}
+#screen3{
+    display: none;
+}
+
 
