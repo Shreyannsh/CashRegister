@@ -44,7 +44,7 @@ function checkHandler() {
     var x;
     var result = input2 - input1;
     
-    if( Number(billAmount.value) === " " || Number(cashRecieved.value) === " "){
+    if(!billAmount.value || !cashRecieved.value){
         showError("Enter valid amount for both the entries!")
     }
     
