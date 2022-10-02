@@ -22,21 +22,18 @@ function nextHandler() {
     }
 };
 
-function showError(text) {
-    error.style.display = "block";
-    error.innerText = text;
-    screen3.style.display = "none";      
-}
+
 
 
 function checkHandler() {
+    
     hideError();
     clearNoOfNotes();
+    
+   
 
-    var input1 = billAmount.value;
-    var input2 = cashRecieved.value;
-    var result = input2 - input1;
-
+    var input1 = Number(billAmount.value);
+    var input2 = Number(cashRecieved.value);
     var count2000 = 0;
     var count500 = 0;
     var count100 = 0;
@@ -45,18 +42,25 @@ function checkHandler() {
     var count5 = 0;
     var count1 = 0;
     var x;
-
-    if (result < 0) {
-
-        showError("Enter valid cash amount");
-
+    var result = input2 - input1;
+    
+    if( Number(billAmount.value) === " " || Number(cashRecieved.value) === " "){
+        showError("Enter valid amount for both the entries!")
     }
-    if (result == 0) {
+    
+    else if (result < 0) {
+
+        showError("cash amount entered is less than bill amount!!");
+    }
+    else if (result == 0) {
         showError("Bill settled. Nothing to be returned");
+    }
+    else if (Number(input1) <= 0) {
+        showError("Enter valid bill amount!");
     } else {
 
         // calculating no. of notes
-        screen3.style.display = "block";
+
         for (i = result; i >= 0; i = i - x) {
 
             if (i >= 2000) {
@@ -96,9 +100,9 @@ function checkHandler() {
                 noOfNotes[6].innerText = count1
 
             }
+            screen3.style.display = "block";
 
         }
-
     }
 
 };
@@ -112,5 +116,12 @@ function clearNoOfNotes() {
 function hideError() {
     error.style.display = "none";
 }
+
+function showError(text) {
+    error.style.display = "block";
+    error.innerText = text;
+    screen3.style.display = "none";
+    clearNoOfNotes();
+};
 
 btnCheck.addEventListener("click", checkHandler);
