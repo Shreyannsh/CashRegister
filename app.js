@@ -1,7 +1,6 @@
 var billAmount = document.querySelector("#bill");
 var cashRecieved = document.querySelector("#cash");
 var btnCheck = document.querySelector("#btn-check");
-var returnAmount = document.querySelector("#amount");
 var noOfNotes = document.querySelectorAll(".noOfNotes");
 var nextButton = document.querySelector("#btn-next");
 var screen1 = document.querySelector("#screen1");
@@ -30,8 +29,6 @@ function checkHandler() {
     hideError();
     clearNoOfNotes();
     
-   
-
     var input1 = Number(billAmount.value);
     var input2 = Number(cashRecieved.value);
     var count2000 = 0;
@@ -52,7 +49,7 @@ function checkHandler() {
 
         showError("cash amount entered is less than bill amount!!");
     }
-    else if (result == 0) {
+    else if (result === 0) {
         showError("Bill settled. Nothing to be returned");
     }
     else if (Number(input1) <= 0) {
